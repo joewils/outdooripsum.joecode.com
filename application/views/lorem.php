@@ -116,7 +116,8 @@
 	  <a href="http://joecode.com">JoeCode</a> | 
 	  <a href="http://www.avantlink.com/click.php?tt=ml&amp;ti=15305&amp;pw=55475">AvantLink.com</a> (advertising) | 
 	  <a href="https://twitter.com/#!/joewils">@joewils</a> (follow) | 
-	  <a href="https://github.com/joewils/outdooripsum.joecode.com">github</a> (fork)
+	  <a href="https://github.com/joewils/outdooripsum.joecode.com">github</a> (fork) | 
+	  <a href="http://ipsum.folktrash.com/">Lorem Ipsum Aggregator</a> (more ipsum)
 </div>
 
 </body>
