@@ -17,6 +17,10 @@
 		color: #003399;
 		background-color: transparent;
 		font-weight: normal;
+		text-decoration:none;
+	}
+	a:hover {
+	  text-decoration:underline;
 	}
 	
 	img {
@@ -108,7 +112,11 @@
 	  
 	</div>
 	
-	<p class="footer"><a href="http://joecode.com">JoeCode</a> | <a href="http://www.avantlink.com/click.php?tt=ml&amp;ti=15305&amp;pw=55475">AvantLink.com</a> | <a href="http://codeigniter.com">Code Igniter</a> | <a href="http://tinsology.net/scripts/php-lorem-ipsum-generator/">PHP Lorem Ipsum</a> | Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+	<p class="footer">
+	  <a href="http://joecode.com">JoeCode</a> | 
+	  <a href="http://www.avantlink.com/click.php?tt=ml&amp;ti=15305&amp;pw=55475">AvantLink.com</a> (advertising) | 
+	  <a href="https://twitter.com/#!/joewils">@joewils</a> (follow) | 
+	  <a href="https://github.com/joewils/outdooripsum.joecode.com">github</a> (fork)
 </div>
 
 </body>

@@ -42,5 +42,5 @@ class Lorem extends CI_Controller {
 	
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file lorem.php */
+/* Location: ./application/controllers/lorem.php */
