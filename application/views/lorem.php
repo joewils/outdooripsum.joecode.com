@@ -104,11 +104,13 @@
 	  
 	  <?php echo $lorem; ?>
 	  
-	  <form method="POST" action="<?php echo base_url().'index.php/lorem/words' ?>">
+	  <form method="POST" action="<?php echo base_url().'lorem/words' ?>">
   	    <label for="words"><strong>Words: </strong  ></label>
   	    <input type="text" name="words" id="words" value="<?php echo $words ?>" />
   	    <input type="submit" value="update" />
   	</form>
+  	
+  	<p><?php echo anchor('json/'.$words.'/callback', 'JSON')?></p>
 	  
 	</div>
 	

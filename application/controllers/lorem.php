@@ -24,6 +24,41 @@ class Lorem extends CI_Controller {
 	  
 	}
 	
+	public function json()
+	{
+  	$this->load->helper('url');
+	  $this->load->library('loremipsum');
+	  
+	  // cache page output
+	  $this->output->cache(60);
+	  
+	  // how many words?
+	  $words = $this->uri->segment(2,false);
+	  if (is_numeric($words)) {
+	    if ($words > 10000) $words = 10000; 
+	    if ($words <= 0) $words = 500; 
+	  } else {
+	    $words = false;
+	  }
+	  
+	  // call back?
+	  $callback = $this->uri->segment(3,false);
+	  
+	  // lorem ipsum
+	  $lorem = $this->loremipsum->getContent($words, 'plain', false);
+	  
+	  $this->output->set_header("content-type: application/json; charset=utf-8");
+	  if ($callback  && $words) {
+	    echo $callback . '(' . json_encode(array('lorem' => $lorem)) . ')';
+	  } elseif($words)  {
+  	  echo json_encode(array('lorem' => $lorem));
+	  } else {
+	    echo json_encode(array('Usage' => 'http://localhost/json/200/', 'Callback' => 'http://localhost/json/200/callback'));
+	  }
+	  
+	  
+	}
+	
 	public function words() 
 	{
 	  $this->load->helper('url');
