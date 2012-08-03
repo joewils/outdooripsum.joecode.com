@@ -8,7 +8,7 @@ class Lorem extends CI_Controller {
 	  $this->load->library('loremipsum');
 	  
 	  // cache page output
-	  $this->output->cache(60);
+	  // $this->output->cache(60);
 	  
 	  // how many words?
 	  $words = $this->uri->segment(2,500);
